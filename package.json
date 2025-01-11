@@ -1,0 +1,28 @@
+{
+  "name": "yapay-zeka-sitem",
+  "version": "1.0.0",
+  "description": "Fal.ai API kullanarak görsel üreten bir web uygulaması",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fal-ai",
+    "ai",
+    "image-generation",
+    "express",
+    "nodejs"
+  ],
+  "author": "Ozan Sihay",
+  "license": "ISC",
+  "dependencies": {
+    "@fal-ai/client": "^1.2.2",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.78.1"
+  }
+}
