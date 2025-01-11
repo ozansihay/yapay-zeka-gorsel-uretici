@@ -6,7 +6,7 @@ async function generateImage() {
 
     try {
         const response = await fetch(`https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}`);
-        
+
         if (response.ok) {
             const blob = await response.blob();
             const imageUrl = URL.createObjectURL(blob);
