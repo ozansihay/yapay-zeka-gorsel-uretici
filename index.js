@@ -5,13 +5,13 @@ async function generateImage() {
   resultDiv.innerHTML = '⏳ Görsel üretiliyor...';
 
   try {
-   const response = await fetch(`https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}`);
-if (response.ok) {
-  const imageUrl = response.url;
-  resultDiv.innerHTML = `<img src="${imageUrl}" alt="Üretilen Görsel">`;
-} else {
-  resultDiv.innerText = '❌ Görsel üretilemedi!';
-}
+    const response = await fetch(`https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}`);
+
+    if (response.ok) {
+      const imageUrl = response.url;  // Pollinations direkt URL döndürüyor.
+      resultDiv.innerHTML = `<img src="${imageUrl}" alt="Üretilen Görsel">`;
+    } else {
+      resultDiv.innerText = '❌ Görsel üretilemedi!';
     }
   } catch (error) {
     resultDiv.innerText = '❌ Bir hata oluştu!';
